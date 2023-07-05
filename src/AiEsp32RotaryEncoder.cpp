@@ -316,7 +316,7 @@ bool AiEsp32RotaryEncoder::isEncoderButtonClicked(unsigned long maximumWaitMilli
 		}
 		return false;
 	}
-	delay(30); // debounce
+	delay(5); // debounce
 	button = 1 - digitalRead(encoderButtonPin);
 	if (!button)
 	{
